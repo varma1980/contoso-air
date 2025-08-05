@@ -40,13 +40,13 @@ on:
 env:
   ACR_RESOURCE_GROUP: myresourcegroup29312
   AZURE_CONTAINER_REGISTRY: myregistryk5bx
-  CONTAINER_NAME: image-workflow-1754384941560
-  CLUSTER_NAME: myaksfirst
-  CLUSTER_RESOURCE_GROUP: Myappinaks
+  CONTAINER_NAME: contoso-air
+  CLUSTER_NAME: my2ndcluster
+  CLUSTER_RESOURCE_GROUP: myresourcegroup29312
   CLUSTER_RESOURCE_TYPE: Microsoft.ContainerService/managedClusters
-  DEPLOYMENT_MANIFEST_PATH: ./src/web/manifests
+  DEPLOYMENT_MANIFEST_PATH: ./manifests
   DOCKER_FILE: ./src/web/Dockerfile
-  BUILD_CONTEXT_PATH: ./
+  BUILD_CONTEXT_PATH: ./src/web
   NAMESPACE: dev
   ENABLENAMESPACECREATION: false
   AUTH_TYPE: SERVICE_PRINCIPAL
